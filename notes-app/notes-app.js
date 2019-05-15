@@ -9,25 +9,15 @@ const notes = [{
     body: 'at least 6 hours sleep'
 }]
 
-document.querySelector('button').addEventListener('click', function (e) {
+document.querySelector('#create-note').addEventListener('click', function (e) {
     e.target.textContent = 'the button was clicked!'
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.querySelector('#remove-all').addEventListener('click', function () {
+    document.querySelectorAll('.note').forEach(function (note) {
+        note.remove()
+    })
+})
 
 // // DOM - Document Object Model
 
@@ -48,3 +38,14 @@ document.querySelector('button').addEventListener('click', function (e) {
 // const newParagraph = document.createElement('p')
 // newParagraph.textContent = 'This is a new element from JavaScript'
 // document.querySelector('body').appendChild(newParagraph)
+
+// -- Single --
+// package
+// #replace
+// .item
+
+// -- Multiple --
+// p#order
+// button.inventory
+// h1#title.application
+// h1.application#title

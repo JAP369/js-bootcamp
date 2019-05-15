@@ -33,8 +33,13 @@ todos.forEach(function (todo) {
 // Add a p for each todo above (use text value)
 
 // listen for new todo creation
-document.querySelector('button').addEventListener('click', function (e) {
+document.querySelector('#add-todo').addEventListener('click', function (e) {
     e.target.textContent = 'the button was clicked'
+})
+
+// remove all to-dos
+document.querySelector('#remove-all').addEventListener('click', function (e) {
+    document.querySelectorAll()
 })
 
 
